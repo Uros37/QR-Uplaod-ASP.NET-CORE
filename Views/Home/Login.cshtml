@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout_Login.cshtml";
+}
+<div class="col-lg-8 col-md-8 col-sm-8 d-flex flex-column" style="margin:auto; max-height:100vh;">
+    <div style="padding: 3rem 0;">
+        <div style="height: 2.5rem">
+            <img src="~/images//LoginLogo.png" style="max-height:100%; object-fit:contain; height:100%;"/>
+        </div>
+    </div>
+    <div id="header_command" style="font-size: 1.4rem;font-weight: bold;">
+        Enter your email to place an order or sign in.
+    </div>
+    <div id="emailInputContainer" style="padding-top:2.5rem">
+        <input type="email" id="user_email" style="padding: 1.2rem 1rem;border: 2px solid black;border-radius: 8px;width: 100%;font-size: 1rem;" />
+    </div>
+    <div style="font-size: 1.2rem;font-weight: 500;padding-top:3rem;">
+        By continuing, I agree to PrintPal's <a style="text-decoration: underline;cursor:pointer;">Privacy Policy</a> and <a style="text-decoration: underline;cursor:pointer;">Terms of use</a>.
+    </div>
+    <div id="container_QRCode" style="display:none;">
+        <img id="qrcode" style="width:300px;height:300px;" />
+    </div>
+    @*preview QR code section*@
+    <div id="uploaded_image_preview_section" style="display:none;">
+        <img id="preview_image" style="width:300px;height:300px;" />
+    </div>
+    <button id="login" class="btn-continue">
+        Continue
+    </button>
+
+</div>
